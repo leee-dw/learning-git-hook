@@ -5,6 +5,7 @@
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
     "husky": "^7.0.4",
+    "simple-git-hooks": "^2.6.1",
     "standard-version": "^9.3.2"
   },
   "husky": {
@@ -17,9 +18,15 @@
       "@commitlint/config-conventional"
     ]
   },
+  "simple-git-hooks": {
+    "pre-commit": "yarn lint-staged",
+    "commit-msg": "yarn commitlint"
+  },
   "scripts": {
     "husky:install": "npx husky install",
     "commitlint": "commitlint -e",
-    "release": "standard-version"
+    "release": "standard-version",
+    "simple-git-hooks": "simple-git-hooks",
+    "postinstall": "yarn simple-git-hooks"
   }
 }

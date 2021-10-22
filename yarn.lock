@@ -1218,6 +1218,7 @@ __metadata:
     "@commitlint/cli": ^13.2.1
     "@commitlint/config-conventional": ^13.2.0
     husky: ^7.0.4
+    simple-git-hooks: ^2.6.1
     standard-version: ^9.3.2
   languageName: unknown
   linkType: soft
@@ -1840,6 +1841,15 @@ resolve@^1.10.0:
   version: 3.0.5
   resolution: "signal-exit@npm:3.0.5"
   checksum: a1d3d0d63f581bd298b30ed8f6de21b73a0fe5a0c0f123b2e8ed7168bbff8f4c1a45e681de12a1966a89bb725d8eb727816be1c436e136951f31953e4a201587
+  languageName: node
+  linkType: hard
+
+"simple-git-hooks@npm:^2.6.1":
+  version: 2.6.1
+  resolution: "simple-git-hooks@npm:2.6.1"
+  bin:
+    simple-git-hooks: cli.js
+  checksum: e9124305eeee6a9b27e516a2dc023cae0dc595c5b26a3b6b97d33be372c297c6d8c7d45cb5add23d45d5b66d2e3aff3962bf444ad83a6f7258176cb3be1db160
   languageName: node
   linkType: hard
 
