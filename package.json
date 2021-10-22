@@ -5,6 +5,7 @@
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
     "husky": "^7.0.4",
+    "lint-staged": "^11.2.3",
     "simple-git-hooks": "^2.6.1",
     "standard-version": "^9.3.2"
   },
@@ -22,7 +23,11 @@
     "pre-commit": "yarn lint-staged",
     "commit-msg": "yarn commitlint"
   },
+  "lint-staged": {
+    "{src,test}/**/*.ts": "eslint --fix"
+  },
   "scripts": {
+    "lint-staged": "lint-staged",
     "husky:install": "npx husky install",
     "commitlint": "commitlint -e",
     "release": "standard-version",
